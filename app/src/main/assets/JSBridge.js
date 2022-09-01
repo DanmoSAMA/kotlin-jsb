@@ -13,6 +13,7 @@ class JSBridge {
     iframe.src = url
     iframe.style.display = 'none'
     document.body.appendChild(iframe)
+    // window.location.href = url
     window.setTimeout(() => {
         document.body.removeChild(iframe)
     }, 1000);

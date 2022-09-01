@@ -8,7 +8,6 @@ import java.lang.reflect.Modifier
 
 object JSBridge {
     private val exposeMethods: MutableMap<String, HashMap<String?, Method>> = HashMap()
-    // private val classAndMethods: HashMap<String, MutableList<Method>> = HashMap()
     private val classAndMethods: MutableMap<String, HashMap<String?, Method>> = HashMap()
       // exposeMethods 数据结构如下，JSBridge是类名，下边有 showToast、openScan等方法
       // {
