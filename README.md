@@ -262,7 +262,7 @@ callbackName 是在别的地方传给 CallBack 类的，见下文。
 
 register 用于将客户端暴露出来的方法塞到 hashmap 中，为一个双层的 map 结构，里层 map 的 key 为方法名，val 为 method 的反射。
 
-```json
+```
 // exposeMethods 数据结构如下，JSBridge是类名，下边有 showToast 等方法
 {
 	// 为什么这里不叫NativeMthods，而要注册成JSBridge呢，个人理解是，可能和业务有关
